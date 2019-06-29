@@ -18,6 +18,8 @@ public class Solution {
      * @return: nothing
      */
     public void sortIntegers2(int[] A) {
+        //better use merge sort, because quick sort is not steady enough, it may be O(n2)
+        //if the chosen pivot is the smallest or biggest
         //merge_sort(A, new int[A.length], 0,A.length-1);
         quick_sort(A,0,A.length-1);
     }
